@@ -10,7 +10,7 @@ export const getBooks = (searchWord) => async (dispatch) => {
 
     dispatch({
       type: SEARCH_BOOKS,
-      payload: res.data,
+      payload: res.data.items,
     });
   } catch (err) {
     dispatch({
